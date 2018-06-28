@@ -1,0 +1,5 @@
+[user]
+	email = dehel.andrew@gmail.com
+	name = andrew dehel
+[alias]
+	lol = log --oneline
