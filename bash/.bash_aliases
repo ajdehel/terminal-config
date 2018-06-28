@@ -1,8 +1,9 @@
-export TERMCONF_DIR=~/.termconf.g
-if [ -d $TERMCONF_DIR/bash ]; then
-    for it in `ls $TERMCONF_DIR/bash`; do
+export TERMCONF_PATH=$HOME/.termconf
+
+if [ -d $TERMCONF_PATH/bash ]; then
+    for it in `ls $TERMCONF_PATH/bash`; do
         if [ ${it%sh} != $it ]; then
-            . $TERMCONF_DIR/bash/"$it"
+            . $TERMCONF_PATH/bash/"$it"
         fi
     done
 fi
