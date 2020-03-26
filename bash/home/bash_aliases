@@ -1,4 +1,4 @@
-export TERMCONF_PATH=$HOME/.termconf
+export TERMCONF_PATH=$HOME/.$USER
 
 if [ -d $TERMCONF_PATH/bash ]; then
     for it in `ls $TERMCONF_PATH/bash`; do
