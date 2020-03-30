@@ -1,3 +1,5 @@
+# Relies on $MARKS in env.sh
+
 alias follow='_follow'
 
 function _follow {
