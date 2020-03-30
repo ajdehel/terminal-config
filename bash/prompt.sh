@@ -1,3 +1,3 @@
 PS1=">>>"
 PS2="..."
-PROMPT_COMMAND='$TERMCONF_PATH/scripts/prompt.py'
+PROMPT_COMMAND='capsoption;$TERMCONF_PATH/scripts/prompt.py'
