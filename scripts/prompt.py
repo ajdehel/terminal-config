@@ -60,7 +60,8 @@ def get_user():
 
 #===============================================================================
 def get_hostname():
-    return os.getenv("NAME")
+    hostname = open("/proc/sys/kernel/hostname", "r").read().strip()
+    return hostname
 
 #===============================================================================
 def get_shlvl():
