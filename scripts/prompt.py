@@ -76,7 +76,7 @@ def get_git_info():
     if proc_status.returncode != 0:
         return ""
     output = str(proc_status.stdout)
-    match = re.search(r"On branch (?P<branch>\w+)", output)
+    match = re.search(r"On branch (?P<branch>\w[\w\-_]+)", output)
     branch = match.group(1) if match else ""
     status = dict()
     status["S"]  = bool(re.search(r"Changes to be committed:", output))
