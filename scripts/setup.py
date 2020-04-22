@@ -8,7 +8,7 @@ termconf_path = f"{home}/.{user}"
 TERMCONF_ENV = "TERMCONF_PATH"
 
 #remove any potentially pre-existing configs
-for each in [".bashrc", ".bash_aliases", ".inputrc", ".vimrc", ".ssh/config", ".gitconfig"]:
+for each in [".bashrc", ".bash_aliases", ".inputrc", ".vimrc", ".gitconfig"]:
 	try:
 		os.remove(f"{home}/{each}")
 	except FileNotFoundError:
@@ -30,7 +30,3 @@ os.symlink(f"{termconf_path}/vim/home/vimrc", f"{home}/.vimrc")
 
 # git
 os.symlink(f"{termconf_path}/git/home/gitconfig", f"{home}/.gitconfig")
-
-# link to ssh config
-os.symlink(f"{termconf_path}/ssh/home/config", f"{home}/.ssh/config")
-
