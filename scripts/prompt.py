@@ -35,7 +35,10 @@ def get_line():
 
 #===============================================================================
 def get_pwd():
-    pwd = pathlib.Path.cwd()
+    try:
+        pwd = pathlib.Path.cwd()
+    except FileNotFoundError:
+        return "**this path no longer exists**"
     try:
         is_home = pwd == HOME
         reference = ROOT if is_home else HOME
