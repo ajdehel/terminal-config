@@ -29,7 +29,7 @@ def main():
 #===============================================================================
 def get_line():
     columns = os.get_terminal_size().columns
-    line = "".join([ "_" for i_ in range(columns)])
+    line = "_" * columns
     line += "\n\n"
     return line
 
