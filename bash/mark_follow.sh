@@ -1,6 +1,12 @@
-# Relies on $MARKS in env.sh
+export MARKS="$HOME/tmp/.MARKS"
 
+alias mark='_mark'
 alias follow='_follow'
+
+function _mark {
+    echo $PWD >> $MARKS;
+    echo $PWD;
+}
 
 function _follow {
     tmp_marks="$MARKS.tmp"
