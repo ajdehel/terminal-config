@@ -6,3 +6,6 @@ nnoremap H ^
 
 " `Y` will behave as `y$` not `yy`
 nnoremap Y y$
+
+" Get Something for moving to _
+nnoremap _ f_

@@ -21,3 +21,6 @@ set hlsearch
 
 " Commenting Assist (currently only works for C-style comments)
 set formatoptions=cr
+
+" dealing with buffers and directories
+set autochdir

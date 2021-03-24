@@ -33,7 +33,7 @@ def create_symlinks(link_dict):
     """Take link_dict and create a key => value link for each key"""
     clear_symlinks(link_dict.keys())
     for link_path, target in link_dict.items():
-        print(f"Link '{str(link_path:<20}' => '{target}'")
+        print(f"Link '{str(link_path):<20}' => '{target}'")
         link_path.symlink_to(target)
 
 def main():

@@ -3,3 +3,5 @@
 	name = andrew dehel
 [alias]
 	lol = log --oneline
+[core]
+	excludesfile = ~/.gitignore
