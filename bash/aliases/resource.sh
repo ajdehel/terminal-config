@@ -1,1 +1,1 @@
-alias resource='source ~/.bashrc'
+alias $(echo $USER)='source $HOME/.bashrc'
