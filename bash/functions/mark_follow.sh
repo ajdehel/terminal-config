@@ -1,14 +1,11 @@
 export MARKS="$HOME/tmp/.MARKS"
 
-alias mark='_mark'
-alias follow='_follow'
-
-function _mark {
+function mark {
     echo $PWD >> $MARKS;
     echo $PWD;
 }
 
-function _follow {
+function follow {
     tmp_marks="$MARKS.tmp"
     if [ ! -e $MARKS ]; then
         return
