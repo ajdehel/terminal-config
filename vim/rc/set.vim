@@ -24,3 +24,6 @@ set formatoptions=cr
 
 " dealing with buffers and directories
 set autochdir
+
+" enable syntax highlighting
+syntax on

@@ -6,8 +6,8 @@ if [ -d $TERMCONF_PATH/sh ]; then
     done
 fi
 
-if [ -d $TERMCONF_PATH/bash ]; then
-    for file in $(find $TERMCONF_PATH/bash -name "*.sh"); do
+if [ -d $TERMCONF_PATH/zsh ]; then
+    for file in $(find $TERMCONF_PATH/zsh -name "*.sh"); do
         . $file
     done
 fi
